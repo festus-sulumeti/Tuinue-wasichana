@@ -5,7 +5,7 @@ import About from './components/About';
 import Donate from './components/Donate';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
-
+import Adminlogin from './components/Adminlogin';
 
 
 import './App.css';
@@ -21,6 +21,7 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/adminlogin" element={<Adminlogin />} />
         </Routes>
         {/* <Footer /> */}
       </div>

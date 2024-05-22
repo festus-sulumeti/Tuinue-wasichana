@@ -1,8 +1,12 @@
-import React from 'react';
+import { useState } from 'react';
+import { ToastContainer, toast  } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 import { useFormik } from 'formik';
 
 
 export default function SignUp({ onSignUp }) {
+    
     const formik = useFormik({
         initialValues: {
             name: '',

@@ -12,7 +12,7 @@ const Adminlogin = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("url_placement/login", {
+            const response = await fetch("http://localhost:5000/adminlogin", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const Adminlogin = () => {
                 toast.success("Login Successful", {
                     autoClose: 100,
                     onClose: () => {
-                        window.location.href = "/adminhome";
+                        window.location.href = "/Adminpage";
                     },
                 });
             } else {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import Footer from './Footer';
+
 
 export default function SignUp({ onSignUp }) {
     const formik = useFormik({
@@ -65,7 +65,6 @@ export default function SignUp({ onSignUp }) {
                     </div>
                 </form>
             </div>
-            <Footer />
         </>
     );
 }
